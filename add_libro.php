@@ -1,4 +1,5 @@
 <?php
+if ($_POST) {
 	$mongo = new Mongo();
 	$db = $mongo->selectDB("librosdb");
 	$c_libros = $mongo->selectCollection("librosdb","libros");
@@ -10,9 +11,14 @@
 	//////////////////////////////////////
 
 	$nuevoLibro = array("nombre"=>$nameLibro,"autor"=>$autor,"descripcion"=>$descripcion);
-	print_r($nuevoLibro);
-	newt_delay(1000);
+	//print_r($nuevoLibro);
+	//newt_delay(1000);
 	$c_libros->insert($nuevoLibro);
-
-	header("Refresh: 0;url=index.php?mensaje=2")
+	$msg = "1";
+ 	echo $msg;
+}else{
+	$msg = "0";
+ 	echo $msg;
+}	
+	
 ?>

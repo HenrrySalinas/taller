@@ -13,3 +13,6 @@
   .tr-head{background: #dff0d8;}
 </style>
 <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="bootstrap/js/jquery-2.1.1.min.js"></script>    
+<script src="bootstrap/js/bootstrap.min.js"></script>
+    
